@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Online shopping</title>
+    <!-- Favicon -->
+    <link rel="Shortcut icon" href="images/favicon.jpg">
+    <!-- JQuerry file -->
+    <script src="js/jquery-3.6.1.js"></script>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Signika+Negative:wght@600&family=Signika:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Bootsrap files -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- font Awesome icons -->
+    <link rel="stylesheet" href="css/fontawesome/all.min.css">
+    <script src="js/fontawesome/all.min.js"></script>
+    <!-- Owlcarousel css -->
+    <link rel="stylesheet" href="css/Owlcarousel/owl.carousel.min.css">
+<link rel="stylesheet" href="css/Owlcarousel/owl.theme.default.min.css">
+    <!-- Costom css file -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar start -->
+
+    <div class="container-flued">
+        <nav id="nav-top" class="navbar navbar-dark bg-dark top-nav">
+            <a class="navbar-brand" href=""><img src="images/amazon_logo.png"></a>
+
+            <li class="nav-item">
+                <div class=" nav-link">
+                    <div class="visitor"><span>Hello.</span></div>
+                </div>
+                <a class="nav-link" href="">
+                    <span>
+                        <i class="fa-solid fa-location-dot"></i>
+                    </span>
+                    Select your location</a>
+            </li>
+            <!-- Search Box -->
+                <form class="form-inline">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text Select-bt">All</span>
+                    </div>
+                    <input type="text" class="form-control search-box" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text search-btn"><i class="fa-solid fa-magnifying-glass-location"></i></span>
+                      </div>
+                  </div>
+                </form>
+
+                <li class="nav-item">
+                    <div class=" nav-link">
+                        <div class="visitor"><span>Hello. sign in</span></div>
+                    </div>
+                    <a class="nav-link" href="">
+                        
+                        Account & lists</a>
+                </li>
+                <li class="nav-item">
+                    <div class=" nav-link">
+                        <div class="visitor"><span>Returns</span></div>
+                    </div>
+                    <a class="nav-link" href="">
+                        
+                        & Orders</a>
+                </li>
+                <li class="nav-item cart-item">
+                    <div class=" nav-link">
+                    <i class="fa-solid fa-cart-shopping cart-icon"></i>
+                    </div>
+                    <a class="nav-link cart-title" href="">Cart</a>
+                </li>
+        </nav>
+    </div>
+    <!-- Top Navbar End -->
+    <div class="container-flued">
+        <nav class="navbar navbar-dark bottom-nav">
+            <li class="nav-item">
+                <div class="nav-link">
+                    <button id="side-menu" onclick="showSideMenu()">
+                    <i class="fa-solid fa-bars"></i>&nbsp; All</button>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="nav-link">
+                    <a href="">Sell</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="nav-link">
+                    <a href="">Best Seller</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="nav-link">
+                    <a href="">Todats Deal's</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="nav-link">
+                    <a href="">Mobiles</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="nav-link">
+                    <a href="">Customer Services</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="nav-link">
+                    <a href="">Books</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="nav-link">
+                    <a href="">Eloctronics</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="nav-link">
+                    <a href="">Fashion</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="nav-link">
+                    <a href="">Prime</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="nav-link">
+                    <a href="">Home & Kitchen</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="nav-link">
+                    <img src="images/navbar-item-logo.jpg">
+                </div>
+            </li>
+            
+
+        </nav>
+    </div>
+    <!-- Side Navigation Bar -->
+    <div class="container-flued">
+        <div class="side-nav" id="Show-nav">
+            <div class="navbar navbar-dark side-top-nav">
+                <div class="top-tittle">
+                    <i class="fa-solid fa-user side-user-icon"></i>
+                    <h4 id="side-top">Hello, Sign in</h4>
+                </div>
+                
+            </div>
+            <div class="side-nav-menus">
+                <div id="tittle">
+                    <h5>Trending</h5>
+                </div>
+                <div class="nav-items">
+                    <div class="nav-link">Best Seller</div>
+                </div>
+                <div class="nav-items">
+                    <div class="nav-link">New Release</div>
+                </div>
+                <div class="nav-items">
+                    <div class="nav-link">Movers and Shakers</div>
+                </div>
+                <hr>
+
+                <div id="tittle">
+                    <h5>Digital Content And Devices</h5>
+                </div>
+                <div class="nav-items">
+                    <div class="nav-link">Echo & Alexa</div>
+                </div>
+                <div class="nav-items">
+                    <div class="nav-link">Kindle E-Readers And eBooks</div>
+                </div>
+                <div class="nav-items">
+                    <div class="nav-link">Audible Audiobooks</div>
+                </div>
+                <div class="nav-items">
+                    <div class="nav-link">Amazon Prime Video</div>
+                </div>
+                <div class="nav-items">
+                    <div class="nav-link">Amazon Prime Music</div>
+                </div>
+                <hr>
+                <div id="tittle">
+                    <h5>Shop By Category</h5>
+                </div>
+                <div class="nav-items">
+                    <div class="nav-link">Mobiles, Computers</div>
+                </div>
+                <div class="nav-items">
+                    <div class="nav-link">TV,Appliances, Electronics</div>
+                </div>
+                <div class="nav-items">
+                    <div class="nav-link">Men's Fashion</div>
+                </div>
+                <div class="nav-items">
+                    <div class="nav-link">Women's Fashion</div>
+                </div>
+                <div class="nav-items">
+                    <div class="nav-link">Amazon Prime Music</div>
+                </div> 
+                <hr>
+
+            </div>
+            <button id="hide-btn" onclick="hideSideNav()">X</button>
+        </div>
+    </div>
+    <!-- side navigation bar Ends -->
+
+    <!-- Orders content Start hare -->
+<div class="order-view">
+    <div class="container orders-li">
+        <div class="jumbotron">
+            <a href="">Your Account ></a>
+            <a href="">Your Orders</a>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Your Orders</h3>
+                </div>
+                <div class="col-md-6">
+                    <div class="order-search flex">
+                        <input type="text" placeholder="Search all orders">
+                        <button type="submit" class="btn btn-dark btn-sm">Search Orders</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="order-nav">
+            <ul class="flex">
+            <a href="">Orders</a>
+            <a href="">By Again</a>
+            <a href="">Not yet Shipped</a>
+            <a href="">Canceled Orders</a>
+            </ul>
+            <hr class="order-hr">
+        </div>
+        <div class="order-count flex">
+            <span class=""><b>5 Orders</b> placed in</span>
+            <select class="Select-months">
+                <option>Past 3 Months</option>
+                <option>Past 6 Months</option>
+                <option>Past 1 Months</option>
+                <option>Past 2 Years</option>
+            </select>
+        </div>
+        <div class="order-list">
+            <ul class="list-group">
+                <li class="list-group-item list-group-item-action list-group-item-dark list-tab">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <label>ORDER PLACED</label><br>
+                            <label>16 October 2022</label>
+                        </div>
+                        <div class="col-md-2">
+                            <label>TOTAL</label><br>
+                            <label>1,699.00</label>
+                        </div>
+                        <div class="col-md-2">
+                            <label>SHOPPED TO</label><br>
+                            <label>Usam Vijay</label>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="order-id">
+                                <label>ORDER <span> # 405-9443804-0587567</span></label><br>
+                                <label><a href="">View order details </a> | <a href="">Invoice</a></label>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="order-item-details">
+                        <h4>Return complete</h4>
+                        <span>Your return is complete. <a href="">when will get my refunt.?</a></span>
+                    </div>
+                    <div class="order">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="order-item">
+                                    <img src="images/products/formal-shue.jpg">
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <a class="order-name" href="">
+                                    TAGG Engage II Calling Smartwatch with Curved Display, Fast Charging & Longest Battery with Calling, Smart QR Codes to Receive Payments,
+                                    100+ WatchFaces, Built-In Games & Calculator, Medicine Reminder</a>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="return-btn">
+                                    <a class="btn btn-warning btn-sm return" href="">view Return/ Refund Status</a>
+                                    <a class="btn btn-primary btn-sm Feadback" href="">Leave seller Feadback</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item offer-list"><a href="">Archive order</a></li>
+                
+              </ul>
+        </div>
+        <div class="order-list">
+            <ul class="list-group">
+                <li class="list-group-item list-group-item-action list-group-item-dark list-tab">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <label>ORDER PLACED</label><br>
+                            <label>16 October 2022</label>
+                        </div>
+                        <div class="col-md-2">
+                            <label>TOTAL</label><br>
+                            <label>1,699.00</label>
+                        </div>
+                        <div class="col-md-2">
+                            <label>SHOPPED TO</label><br>
+                            <label>Usam Vijay</label>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="order-id">
+                                <label>ORDER <span> # 405-9443804-0587567</span></label><br>
+                                <label><a href="">View order details </a> | <a href="">Invoice</a></label>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="order-item-details">
+                        <h4>Return complete</h4>
+                        <span>Your return is complete. <a href="">when will get my refunt.?</a></span>
+                    </div>
+                    <div class="order">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="order-item">
+                                    <img src="images/products/ss.jpg">
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <a class="order-name" href="">
+                                    TAGG Engage II Calling Smartwatch with Curved Display, Fast Charging & Longest Battery with Calling, Smart QR Codes to Receive Payments,
+                                    100+ WatchFaces, Built-In Games & Calculator, Medicine Reminder</a>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="return-btn">
+                                    <a class="btn btn-warning btn-sm return" href="">view Return/ Refund Status</a>
+                                    <a class="btn btn-primary btn-sm Feadback" href="">Leave seller Feadback</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item offer-list"><a href="">Archive order</a></li>
+                
+              </ul>
+        </div>
+        <div class="order-list">
+            <ul class="list-group">
+                <li class="list-group-item list-group-item-action list-group-item-dark list-tab">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <label>ORDER PLACED</label><br>
+                            <label>16 October 2022</label>
+                        </div>
+                        <div class="col-md-2">
+                            <label>TOTAL</label><br>
+                            <label>1,699.00</label>
+                        </div>
+                        <div class="col-md-2">
+                            <label>SHOPPED TO</label><br>
+                            <label>Usam Vijay</label>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="order-id">
+                                <label>ORDER <span> # 405-9443804-0587567</span></label><br>
+                                <label><a href="">View order details </a> | <a href="">Invoice</a></label>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item">
+                    <div class="order-item-details">
+                        <h4>Return complete</h4>
+                        <span>Your return is complete. <a href="">when will get my refunt.?</a></span>
+                    </div>
+                    <div class="order">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="order-item">
+                                    <img src="images/1.jpg">
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <a class="order-name" href="">
+                                    TAGG Engage II Calling Smartwatch with Curved Display, Fast Charging & Longest Battery with Calling, Smart QR Codes to Receive Payments,
+                                    100+ WatchFaces, Built-In Games & Calculator, Medicine Reminder</a>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="return-btn">
+                                    <a class="btn btn-warning btn-sm return" href="">view Return/ Refund Status</a>
+                                    <a class="btn btn-primary btn-sm Feadback" href="">Leave seller Feadback</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="list-group-item offer-list"><a href="">Archive order</a></li>
+                
+              </ul>
+        </div>
+    </div>
+</div>
+<div class="container-flued">
+                  <!-- Product slider -->
+                  <div class="product-slider">
+                    <div class="deal-title">
+                    <h3>Deals on frequently repurchased items</h3>
+                    <a href="">See All Deals</a>
+                    </div>
+                    <div class="owl-carousel owl-theme">
+                        <div class="slider-item">
+                            <div class="item-box">
+                                <a href="">
+                            <img src="images/blockpaster_Deals/1.jpg">
+                            <h5>Best Watches for Men</h5>
+                            <div class="ratting-pannel flex">
+                            <div style="color:orange;" class="rating flex">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i> 
+                            </div>
+                            <a href="">&nbsp;441</a>
+                        </div>
+                            <div class="re-price flex"><h4>₹ 450.00</h4><img id="prime" src="images/prime.jpg"></div>
+                            <div class="item-title">
+                                <s style="color:brown">₹ 48758</s>
+                            </div>
+                            </a>
+    
+                        </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="item-box">
+                                <a href="">
+                            <img src="images/blockpaster_Deals/2.jpg">
+                            <h5>Best Watches for Men</h5>
+                            <div class="ratting-pannel flex">
+                            <div style="color:orange;" class="rating flex">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i> 
+                            </div>
+                            <a href="">&nbsp;441</a>
+                        </div>
+                            <div class="re-price flex"><h4>₹ 450.00</h4><img id="prime" src="images/prime.jpg"></div>
+                            <div class="item-title">
+                                <s style="color:brown">₹ 48758</s>
+                            </div>
+                            </a>
+    
+                        </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="item-box">
+                                <a href="">
+                            <img src="images/blockpaster_Deals/3.jpg">
+                            <h5>Best Watches for Men</h5>
+                            <div class="ratting-pannel flex">
+                            <div style="color:orange;" class="rating flex">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i> 
+                            </div>
+                            <a href="">&nbsp;441</a>
+                        </div>
+                            <div class="re-price flex"><h4>₹ 450.00</h4><img id="prime" src="images/prime.jpg"></div>
+                            <div class="item-title">
+                                <s style="color:brown">₹ 48758</s>
+                            </div>
+                            </a>
+    
+                        </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="item-box">
+                                <a href="">
+                            <img src="images/blockpaster_Deals/4.jpg">
+                            <h5>Best Watches for Men</h5>
+                            <div class="ratting-pannel flex">
+                            <div style="color:orange;" class="rating flex">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i> 
+                            </div>
+                            <a href="">&nbsp;441</a>
+                        </div>
+                            <div class="re-price flex"><h4>₹ 450.00</h4><img id="prime" src="images/prime.jpg"></div>
+                            <div class="item-title">
+                                <s style="color:brown">₹ 48758</s>
+                            </div>
+                            </a>
+    
+                        </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="item-box">
+                                <a href="">
+                            <img src="images/blockpaster_Deals/5.jpg">
+                            <h5>Best Watches for Men</h5>
+                            <div class="ratting-pannel flex">
+                            <div style="color:orange;" class="rating flex">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i> 
+                            </div>
+                            <a href="">&nbsp;441</a>
+                        </div>
+                            <div class="re-price flex"><h4>₹ 450.00</h4><img id="prime" src="images/prime.jpg"></div>
+                            <div class="item-title">
+                                <s style="color:brown">₹ 48758</s>
+                            </div>
+                            </a>
+    
+                        </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="item-box">
+                                <a href="">
+                            <img src="images/blockpaster_Deals/6.jpg">
+                            <h5>Best Watches for Men</h5>
+                            <div class="ratting-pannel flex">
+                            <div style="color:orange;" class="rating flex">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i> 
+                            </div>
+                            <a href="">&nbsp;441</a>
+                        </div>
+                            <div class="re-price flex"><h4>₹ 450.00</h4><img id="prime" src="images/prime.jpg"></div>
+                            <div class="item-title">
+                                <s style="color:brown">₹ 48758</s>
+                            </div>
+                            </a>
+    
+                        </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="item-box">
+                                <a href="">
+                            <img src="images/blockpaster_Deals/7.jpg">
+                            <h5>Best Watches for Men</h5>
+                            <div class="ratting-pannel flex">
+                            <div style="color:orange;" class="rating flex">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i> 
+                            </div>
+                            <a href="">&nbsp;441</a>
+                        </div>
+                            <div class="re-price flex"><h4>₹ 450.00</h4><img id="prime" src="images/prime.jpg"></div>
+                            <div class="item-title">
+                                <s style="color:brown">₹ 48758</s>
+                            </div>
+                            </a>
+    
+                        </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="item-box">
+                                <a href="">
+                            <img src="images/blockpaster_Deals/8.jpg">
+                            <h5>Best Watches for Men</h5>
+                            <div class="ratting-pannel flex">
+                            <div style="color:orange;" class="rating flex">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i> 
+                            </div>
+                            <a href="">&nbsp;441</a>
+                        </div>
+                            <div class="re-price flex"><h4>₹ 450.00</h4><img id="prime" src="images/prime.jpg"></div>
+                            <div class="item-title">
+                                <s style="color:brown">₹ 48758</s>
+                            </div>
+                            </a>
+    
+                        </div>
+                        </div>
+                        <div class="slider-item">
+                            <div class="item-box">
+                                <a href="">
+                            <img src="images/laptop.jpg">
+                            <h5>Best Watches for Men</h5>
+                            <div class="ratting-pannel flex">
+                            <div style="color:orange;" class="rating flex">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-regular fa-star"></i> 
+                            </div>
+                            <a href="">&nbsp;441</a>
+                        </div>
+                            <div class="re-price flex"><h4>₹ 450.00</h4><img id="prime" src="images/prime.jpg"></div>
+                            <div class="item-title">
+                                <s style="color:brown">₹ 48758</s>
+                            </div>
+                            </a>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+    
+</div>
+
+<footer>
+    <div class="back-to-top">
+        <a class="" href="#nav-top">Back To Top</a>
+    </div>
+    <div class="main-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <ul>
+                        <h6>Get to know us</h6>
+                        <li>About us</li>
+                        <li>Careers</li>
+                        <li>Press Releases</li>
+                        <li>Amazon Sceince</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul>
+                        <h6>Contact with us</h6>
+                        <li>Facebook</li>
+                        <li>Twitter</li>
+                        <li>Instagram</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul>
+                        <h6>Get to know us</h6>
+                        <li>sell on Amazone</li>
+                        <li>Cell under Amazon Acculator</li>
+                        <li>Amazon global Selling</li>
+                        <li>Become an Affilate</li>
+                        <li>Advertise your Products</li>
+                        <li>Amazon pay on Marchant</li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul>
+                        <h6>Let us Helf You</h6>
+                        <li>COVID-19 and Amazon</li>
+                        <li>Your Account</li>
+                        <li>Returns Center</li>
+                        <li>100% Purchase Protection</li>
+                        <li>Amazon app Download</li>
+                        <li>Help</li>
+                    </ul>
+                </div>
+
+            </div>
+            <hr>
+            <div class="bottom-footer">
+                    <div class="footer-logo">
+                        <img src="images/amazon_logo.png">
+                        <select>
+                            <option>English</option>
+                            <option>Telugu</option>
+                            <option>Hindi</option>
+                            <option>Spanis</option>
+                        </select>
+
+                    </div>
+                    <div class="contry-list">
+                        <ul>
+                            <li>Australia</li>
+                            <li>Brezil</li>
+                            <li>Cenada</li>
+                            <li>Chaina</li>
+                            <li>France</li>
+                            <li>Germani</li>
+                            <li>Italy</li>
+                            <li>Japan</li>
+                            <li>Mexico</li>
+                            <li>Netherland</li>
+                            <li>Poland  </li>
+                            <li>singapoor</li>
+                            <li>tourky</li>
+                            <li>spain</li>
+                            <li>United states</li>
+                        </ul>
+                    </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Bootstrap Js -->
+<script src="js/bootstrap.min.js"></script>
+<!-- owl carouel -->
+
+<script src="js/owlcarousel/owl.carousel.min.js"></script>
+
+<!-- custom Js file -->
+<script src="js/script.js"></script>
+<!-- owlCarousel -->
+<script src="jquery.min.js"></script>
+</body>
+</html>

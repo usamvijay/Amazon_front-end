@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Online shopping</title>
+    <!-- Favicon -->
+    <link rel="Shortcut icon" href="images/favicon.jpg">
+    <!-- JQuerry file -->
+    <script src="js/jquery-3.6.1.js"></script>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Signika+Negative:wght@600&family=Signika:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Bootsrap files -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    
+    <!-- font Awesome icons -->
+    <link rel="stylesheet" href="css/fontawesome/all.min.css">
+    <script src="js/fontawesome/all.min.js"></script>
+    <!-- Owlcarousel css -->
+    <link rel="stylesheet" href="css/Owlcarousel/owl.carousel.min.css">
+<link rel="stylesheet" href="css/Owlcarousel/owl.theme.default.min.css">
+    <!-- Costom css file -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar start -->
+
+    <div class="container-flued">
+        <nav id="nav-top" class="navbar navbar-dark bg-dark top-nav">
+            <a class="navbar-brand" href=""><img src="images/amazon_logo.png"></a>
+
+            <li class="nav-item">
+                <div class=" nav-link">
+                    <div class="visitor"><span>Hello.</span></div>
+                </div>
+                <a class="nav-link" href="">
+                    <span>
+                        <i class="fa-solid fa-location-dot"></i>
+                    </span>
+                    Select your location</a>
+            </li>
+            <!-- Search Box -->
+                <form class="form-inline">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text Select-bt">All</span>
+                    </div>
+                    <input type="text" class="form-control search-box" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text search-btn"><i class="fa-solid fa-magnifying-glass-location"></i></span>
+                      </div>
+                  </div>
+                </form>
+
+                <li class="nav-item">
+                    <div class=" nav-link">
+                        <div class="visitor"><span>Hello. sign in</span></div>
+                    </div>
+                    <a class="nav-link" href="">
+                        
+                        Account & lists</a>
+                </li>
+                <li class="nav-item">
+                    <div class=" nav-link">
+                        <div class="visitor"><span>Returns</span></div>
+                    </div>
+                    <a class="nav-link" href="">
+                        
+                        & Orders</a>
+                </li>
+                <li class="nav-item cart-item">
+                    <div class=" nav-link">
+                    <i class="fa-solid fa-cart-shopping cart-icon"></i>
+                    </div>
+                    <a class="nav-link cart-title" href="">Cart</a>
+                </li>
+        </nav>
+    </div>
+    <!-- Top Navbar End -->
+    <div class="container-flued">
+        <nav class="navbar navbar-dark bottom-nav">
+            <li class="nav-item">
+                <div class="nav-link">
+                    <button id="side-menu" onclick="showSideMenu()">
+                    <i class="fa-solid fa-bars"></i>&nbsp; All</button>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="nav-link">
+                    <a href="">Sell</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="nav-link">
+                    <a href="">Best Seller</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="nav-link">
+                    <a href="">Todats Deal's</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="nav-link">
+                    <a href="">Mobiles</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="nav-link">
+                    <a href="">Customer Services</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="nav-link">
+                    <a href="">Books</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="nav-link">
+                    <a href="">Eloctronics</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="nav-link">
+                    <a href="">Fashion</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="nav-link">
+                    <a href="">Prime</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="nav-link">
+                    <a href="">Home & Kitchen</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="nav-link">
+                    <img src="images/navbar-item-logo.jpg">
+                </div>
+            </li>
+            
+
+        </nav>
+    </div>
+    <!-- Side Navigation Bar -->
+    <div class="container-flued">
+        <div class="side-nav" id="Show-nav">
+            <div class="navbar navbar-dark side-top-nav">
+                <div class="top-tittle">
+                    <i class="fa-solid fa-user side-user-icon"></i>
+                    <h4 id="side-top">Hello, Sign in</h4>
+                </div>
+                
+            </div>
+            <div class="side-nav-menus">
+                <div id="tittle">
+                    <h5>Trending</h5>
+                </div>
+                <div class="nav-items">
+                    <div class="nav-link">Best Seller</div>
+                </div>
+                <div class="nav-items">
+                    <div class="nav-link">New Release</div>
+                </div>
+                <div class="nav-items">
+                    <div class="nav-link">Movers and Shakers</div>
+                </div>
+                <hr>
+
+                <div id="tittle">
+                    <h5>Digital Content And Devices</h5>
+                </div>
+                <div class="nav-items">
+                    <div class="nav-link">Echo & Alexa</div>
+                </div>
+                <div class="nav-items">
+                    <div class="nav-link">Kindle E-Readers And eBooks</div>
+                </div>
+                <div class="nav-items">
+                    <div class="nav-link">Audible Audiobooks</div>
+                </div>
+                <div class="nav-items">
+                    <div class="nav-link">Amazon Prime Video</div>
+                </div>
+                <div class="nav-items">
+                    <div class="nav-link">Amazon Prime Music</div>
+                </div>
+                <hr>
+                <div id="tittle">
+                    <h5>Shop By Category</h5>
+                </div>
+                <div class="nav-items">
+                    <div class="nav-link">Mobiles, Computers</div>
+                </div>
+                <div class="nav-items">
+                    <div class="nav-link">TV,Appliances, Electronics</div>
+                </div>
+                <div class="nav-items">
+                    <div class="nav-link">Men's Fashion</div>
+                </div>
+                <div class="nav-items">
+                    <div class="nav-link">Women's Fashion</div>
+                </div>
+                <div class="nav-items">
+                    <div class="nav-link">Amazon Prime Music</div>
+                </div> 
+                <hr>
+
+            </div>
+            <button id="hide-btn" onclick="hideSideNav()">X</button>
+        </div>
+    </div>
+    <!-- side navigation bar Ends -->
+
+    <nav class="navbar navbar-dark Sub-category-nav">
+        
+        <li class="nav-item">
+            <div class="nav-link">
+                <h5 style="color:black; padding-left:10px;">Amazon Fashion</h5>
+            </div>
+        </li>
+        <li class="nav-item">
+            <div class="nav-link">
+                <a href="">Best Seller</a>
+            </div>
+        </li>
+        <li class="nav-item">
+            <div class="nav-link">
+                <a href="">Todats Deal's</a>
+            </div>
+        </li>
+        <li class="nav-item">
+            <div class="nav-link">
+                <a href="">Mobiles</a>
+            </div>
+        </li>
+        <li class="nav-item">
+            <div class="nav-link">
+                <a href="">Customer Services</a>
+            </div>
+        </li>
+        <li class="nav-item">
+            <div class="nav-link">
+                <a href="">Books</a>
+            </div>
+        </li>
+        <li class="nav-item">
+            <div class="nav-link">
+                <a href="">Eloctronics</a>
+            </div>
+        </li>
+        <li class="nav-item">
+            <div class="nav-link">
+                <a href="">Fashion</a>
+            </div>
+        </li>
+        <li class="nav-item">
+            <div class="nav-link">
+                <a href="">Prime</a>
+            </div>
+        </li>
+        <li class="nav-item">
+            <div class="nav-link">
+                <a href="">Home & Kitchen</a>
+            </div>
+        </li>
+        
+
+    </nav>
+</div>
+
+<!-- Jumbotron Hare -->
+<div class="item-add">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="add-item">
+                    <img src="images/products/shue.png">
+                    
+                </div>
+            </div>
+            <div class="col-md-4">
+                <p class="product-title">Liberty Boys Bastine-2e Sneckers</p>
+            </div>
+            <div class="col-md-4">
+                <div class="add-price">
+                <h2>Save 50%</h2>
+                <h3>399<sup>00</sup></h3>
+                <p><s>799</s></p>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Jumbotron Hare -->
+
+<!-- BreadCrumb -->
+<div class="container">
+<ul class="breadcrumb">
+    <li><a href="" >Home </a><span>/</span></li>
+    <li><a href="" >Products</a><span>/</span></li>
+    <li><a href="" >Product details</a><span>/</span></li>
+</ul>
+</div>
+<!-- BreadCrumb End Hare -->
+
+<!-- Deatails Page -->
+<div class="container-flued product_full_Deatails">
+    <div class="row">
+        <div class="col-md-5">
+            <div class="view-product">
+                <img src="images/products/ss.jpg">
+                <div class="pik-color">
+                
+                    <img src="images/products/ss.jpg">
+                    <img src="images/products/ss.jpg">
+                    <img src="images/products/ss.jpg">
+                    <img src="images/products/ss.jpg">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 pd-list">
+            <div class="view-pro">
+                <a href="">Visit the Liberty Store</a>
+                <h3 class="prod-title">Liberty Boys Bastian-2e Sneaker</h3>
+                <div style="color:orange;" class="rating">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <a href="">12 Rattings</a>
+                </div>
+                
+            </div>
+            <hr>
+            <div class="pricing">
+                <p class="pr">M.R.P: <s>799</s></p>
+                <span class="flex Deal-price"><p>Deal Price</p><label>₹399</label></span>
+                <span class="flex save"><p>You save:</p><p1>₹400.00 (50%)</p1></span>
+                <span class="taxes">Inclusive of all taxes</span>
+            </div>
+            
+            <ul class="list-group lg">
+                <li class="list-group-item offer-list"><span> <i class="fa-brands fa-buffer"></i>&nbsp; Save Extra </span> with 3 offers</li>
+                <li class="list-group-item offer-list"><span>Bank Offer (18): </span>10% Instant Discount up to INR 1250 on ICICI Bank Credit Card Non-EMI <a href="">See all</a></li>
+                <li class="list-group-item offer-list"><span>No cost Emi: </span>Avail No Cost EMI on select cards for orders above ₹3000 | <a href="">Details</a></li>
+                <li class="list-group-item offer-list"><a href="">See more</a></li>
+                
+              </ul>
+              <div class="container Delivery-icons">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="delivery_zone">
+                            <div class="Delivery-icon">
+                                <img src="images/icons/cash-on-delivery.png"><br>
+                                <a href="">Pay on delivery</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="delivery_zone">
+                            <div class="Delivery-icon">
+                                <img src="images/icons/returning.png"><br>
+                                <a href="">30 days Return & Echange</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="delivery_zone">
+                            <div class="Delivery-icon">
+                                <img src="images/icons/delivery.png"><br>
+                                <a href="">Free Delivery</a>
+                            </div>
+                          </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="delivery_zone">
+                            <div class="Delivery-icon">
+                                <img src="images/icons/truck.png"><br>
+                                <a href="">Amazon Delivery</a>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+              </div>
+            <hr>
+            <div class="size">
+                <p>Size:</p>
+                <select >Select Size
+                    <option>8 kids Uk</option>
+                    <option>6 kids Uk</option>
+                    <option>7 kids Uk</option>
+                    <option>9 kids Uk</option>
+                </select>
+            </div>
+            <div class="pik-color">
+                <p><b>Color:</b><span> N Blue</span></p>
+                <img src="images/products/ss.jpg">
+                <img src="images/products/ss.jpg">
+                <img src="images/products/ss.jpg">
+                <img src="images/products/ss.jpg">
+            </div>
+            <a class="chart" href="">Size chart</a>
+            <h6 id="pd">Product Details</h6>
+            <div class="item-info">
+                <table>
+                    <tr>
+                        <td id="td-1">Closure Type</td>
+                        <td id="td-2">Pull on</td>
+                    </tr>
+                    <tr>
+                        <td id="td-1">Heel Type</td>
+                        <td id="td-2">Flat</td>
+                    </tr>
+                    <tr>
+                        <td id="td-1">Water Resistance Level</td>
+                        <td id="td-2">Not Water Resistant</td>
+                    </tr>
+                    <tr>
+                        <td id="td-1">Outer Material</td>
+                        <td id="td-2">Canvas</td>
+                    </tr>
+                    <tr>
+                        <td id="td-1">Country of Origin</td>
+                        <td id="td-2">India</td>
+                    </tr>
+                </table>
+            </div>
+            <hr>
+            <h6 id="pd">Additional Information</h6>
+            <div class="item-info">
+                <table>
+                    <tr>
+                        <td id="td-1">Manufacturer</td>
+                        <td id="td-2">Liberty, Liberty Shoes Ltd, 13th mile stone,G.T Karnal Road,Kutail, Distt. Karnal, Haryana , India , Contact No - 0184-2252510 , customercare@libertyshoes.com</td>
+                    </tr>
+                    <tr>
+                        <td id="td-1">Packer</td>
+                        <td id="td-2">NON LACING, Liberty Shoes Ltd, 13th mile stone,G.T Karnal Road,Kutail, Distt. Karnal, Haryana , India , Contact No - 0184-2252510 , customercare@libertyshoes.com</td>
+                    </tr>
+                    <tr>
+                        <td id="td-1">Importer</td>
+                        <td id="td-2">Liberty Shoes Ltd, 13th mile stone,G.T Karnal Road,Kutail, Distt. Karnal, Haryana , India , Contact No - 0184-2252510 , customercare@libertyshoes.com</td>
+                    </tr>
+                    <tr>
+                        <td id="td-1">Item Weight</td>
+                        <td id="td-2">520 g</td>
+                    </tr>
+                    <tr>
+                        <td id="td-1">Item Dimensions LxWxHn</td>
+                        <td id="td-2">29 x 16 x 10 Centimeters</td>
+                    </tr>
+                    <tr>
+                        <td id="td-1">Net Quantity</td>
+                        <td id="td-2">1 Count</td>
+                    </tr>
+                    <tr>
+                        <td id="td-1">Generic Name</td>
+                        <td id="td-2">Sneaker</td>
+                    </tr>
+                </table>
+            </div>
+            <hr>
+            <div class="container related-add">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div class="">
+                            <img src="images/products/formal-shue.jpg">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <p>Liberty unex- child Boy formals for Schools</p>
+                        <div style="color:orange;" class="rating">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <a href="">12 Rattings</a>
+                        </div>
+                        
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-md-3">
+            <div class="row buying-card">
+                <div class="">
+                    <span class="flex Deal-price"><p></p><label>₹399</label></span>
+                    <span class=""><a class="fd" href="">FREE delivery &nbsp;</a><b>Wednesday, 19 October</b><p>On First Order within 11 hrs 6mins <a href="">Details</a></p></span>
+                    <a class="locat" href=""><i class="fa-solid fa-location-dot"></i> Select your location</a>
+                
+            </div>
+            <h3 class="in-stock">
+                In Stock
+            </h3>
+        <span>Sold by&nbsp;<a href="">Liberty Shoes limited</a> and &nbsp;<a href="">Fulfilled by Amazon.</a></span>
+        <div class="qty flex">
+        <label>Quantity:</label>
+        <select>
+            <option>1</option>
+            <option>4</option>
+            <option>3</option>
+            <option>4</option>
+        </select>
+    </div>
+    <div class="buy-cart-btn">
+    <button type="submit" class="btn btn-warning btn-sm cart-btn ">Add to Cart</button>
+    <button type="submit" class="btn btn-danger btn-sm buy-btn">Buy Now</button>
+</div>
+
+    <a href="">secure Transections  </a>
+    <div id="gift-option">
+        <input type="checkbox">
+        <label>Add gift option</label>
+    </div>
+    <hr>
+    <div class="to-whish">
+        <button type="submit" class="btn btn-sm btn-info">Add to whish List</button>
+    </div>
+</div>
+<div class=" row buying-card-2">
+    <label>New 2 from</label><br>
+    <p><span>₹400.00</span><b>Free Delivery</b> On first order</p>
+</div>
+<div class=" row ">
+    <ul class="list-group seller">
+        <li class="list-group-item other-seller">Other seller on amazon</li>
+        <li class="list-group-item other-seller">
+            <span>₹399.00</span>
+            <p id="fd"></b>FREE delivery</b></p>
+            <p id="sb">Sold by Liberty Shoes Limited</p>
+
+        </li>
+    </ul>
+</div>
+
+        </div>
+    </div>
+</div>
+
+              <!-- Product slider -->
+              <div class="product-slider">
+                <div class="deal-title">
+                <h3>Products related to this item</h3>
+                <a href="">See All Deals</a>
+                </div>
+                <div class="owl-carousel owl-theme">
+                    <div class="slider-item">
+                        <div class="item-box">
+                            <a href="">
+                        <img src="images/blockpaster_Deals/1.jpg">
+                        <h5>Best Watches for Men</h5>
+                        <div class="ratting-pannel flex">
+                        <div style="color:orange;" class="rating flex">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i> 
+                        </div>
+                        <a href="">&nbsp;441</a>
+                    </div>
+                        <div class="re-price flex"><h4>₹ 450.00</h4><img id="prime" src="images/prime.jpg"></div>
+                        <div class="item-title">
+                            <s style="color:brown">₹ 48758</s>
+                        </div>
+                        </a>
+
+                    </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="item-box">
+                            <a href="">
+                        <img src="images/blockpaster_Deals/2.jpg">
+                        <h5>Best Watches for Men</h5>
+                        <div class="ratting-pannel flex">
+                        <div style="color:orange;" class="rating flex">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i> 
+                        </div>
+                        <a href="">&nbsp;441</a>
+                    </div>
+                        <div class="re-price flex"><h4>₹ 450.00</h4><img id="prime" src="images/prime.jpg"></div>
+                        <div class="item-title">
+                            <s style="color:brown">₹ 48758</s>
+                        </div>
+                        </a>
+
+                    </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="item-box">
+                            <a href="">
+                        <img src="images/blockpaster_Deals/3.jpg">
+                        <h5>Best Watches for Men</h5>
+                        <div class="ratting-pannel flex">
+                        <div style="color:orange;" class="rating flex">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i> 
+                        </div>
+                        <a href="">&nbsp;441</a>
+                    </div>
+                        <div class="re-price flex"><h4>₹ 450.00</h4><img id="prime" src="images/prime.jpg"></div>
+                        <div class="item-title">
+                            <s style="color:brown">₹ 48758</s>
+                        </div>
+                        </a>
+
+                    </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="item-box">
+                            <a href="">
+                        <img src="images/blockpaster_Deals/4.jpg">
+                        <h5>Best Watches for Men</h5>
+                        <div class="ratting-pannel flex">
+                        <div style="color:orange;" class="rating flex">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i> 
+                        </div>
+                        <a href="">&nbsp;441</a>
+                    </div>
+                        <div class="re-price flex"><h4>₹ 450.00</h4><img id="prime" src="images/prime.jpg"></div>
+                        <div class="item-title">
+                            <s style="color:brown">₹ 48758</s>
+                        </div>
+                        </a>
+
+                    </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="item-box">
+                            <a href="">
+                        <img src="images/blockpaster_Deals/5.jpg">
+                        <h5>Best Watches for Men</h5>
+                        <div class="ratting-pannel flex">
+                        <div style="color:orange;" class="rating flex">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i> 
+                        </div>
+                        <a href="">&nbsp;441</a>
+                    </div>
+                        <div class="re-price flex"><h4>₹ 450.00</h4><img id="prime" src="images/prime.jpg"></div>
+                        <div class="item-title">
+                            <s style="color:brown">₹ 48758</s>
+                        </div>
+                        </a>
+
+                    </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="item-box">
+                            <a href="">
+                        <img src="images/blockpaster_Deals/6.jpg">
+                        <h5>Best Watches for Men</h5>
+                        <div class="ratting-pannel flex">
+                        <div style="color:orange;" class="rating flex">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i> 
+                        </div>
+                        <a href="">&nbsp;441</a>
+                    </div>
+                        <div class="re-price flex"><h4>₹ 450.00</h4><img id="prime" src="images/prime.jpg"></div>
+                        <div class="item-title">
+                            <s style="color:brown">₹ 48758</s>
+                        </div>
+                        </a>
+
+                    </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="item-box">
+                            <a href="">
+                        <img src="images/blockpaster_Deals/7.jpg">
+                        <h5>Best Watches for Men</h5>
+                        <div class="ratting-pannel flex">
+                        <div style="color:orange;" class="rating flex">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i> 
+                        </div>
+                        <a href="">&nbsp;441</a>
+                    </div>
+                        <div class="re-price flex"><h4>₹ 450.00</h4><img id="prime" src="images/prime.jpg"></div>
+                        <div class="item-title">
+                            <s style="color:brown">₹ 48758</s>
+                        </div>
+                        </a>
+
+                    </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="item-box">
+                            <a href="">
+                        <img src="images/blockpaster_Deals/8.jpg">
+                        <h5>Best Watches for Men</h5>
+                        <div class="ratting-pannel flex">
+                        <div style="color:orange;" class="rating flex">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i> 
+                        </div>
+                        <a href="">&nbsp;441</a>
+                    </div>
+                        <div class="re-price flex"><h4>₹ 450.00</h4><img id="prime" src="images/prime.jpg"></div>
+                        <div class="item-title">
+                            <s style="color:brown">₹ 48758</s>
+                        </div>
+                        </a>
+
+                    </div>
+                    </div>
+                    <div class="slider-item">
+                        <div class="item-box">
+                            <a href="">
+                        <img src="images/laptop.jpg">
+                        <h5>Best Watches for Men</h5>
+                        <div class="ratting-pannel flex">
+                        <div style="color:orange;" class="rating flex">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i> 
+                        </div>
+                        <a href="">&nbsp;441</a>
+                    </div>
+                        <div class="re-price flex"><h4>₹ 450.00</h4><img id="prime" src="images/prime.jpg"></div>
+                        <div class="item-title">
+                            <s style="color:brown">₹ 48758</s>
+                        </div>
+                        </a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+<!-- Deatails Page -->
+    <footer>
+        <div class="back-to-top">
+            <a class="" href="#nav-top">Back To Top</a>
+        </div>
+        <div class="main-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <ul>
+                            <h6>Get to know us</h6>
+                            <li>About us</li>
+                            <li>Careers</li>
+                            <li>Press Releases</li>
+                            <li>Amazon Sceince</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <ul>
+                            <h6>Contact with us</h6>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <ul>
+                            <h6>Get to know us</h6>
+                            <li>sell on Amazone</li>
+                            <li>Cell under Amazon Acculator</li>
+                            <li>Amazon global Selling</li>
+                            <li>Become an Affilate</li>
+                            <li>Advertise your Products</li>
+                            <li>Amazon pay on Marchant</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <ul>
+                            <h6>Let us Helf You</h6>
+                            <li>COVID-19 and Amazon</li>
+                            <li>Your Account</li>
+                            <li>Returns Center</li>
+                            <li>100% Purchase Protection</li>
+                            <li>Amazon app Download</li>
+                            <li>Help</li>
+                        </ul>
+                    </div>
+
+                </div>
+                <hr>
+                <div class="bottom-footer">
+                        <div class="footer-logo">
+                            <img src="images/amazon_logo.png">
+                            <select>
+                                <option>English</option>
+                                <option>Telugu</option>
+                                <option>Hindi</option>
+                                <option>Spanis</option>
+                            </select>
+
+                        </div>
+                        <div class="contry-list">
+                            <ul>
+                                <li>Australia</li>
+                                <li>Brezil</li>
+                                <li>Cenada</li>
+                                <li>Chaina</li>
+                                <li>France</li>
+                                <li>Germani</li>
+                                <li>Italy</li>
+                                <li>Japan</li>
+                                <li>Mexico</li>
+                                <li>Netherland</li>
+                                <li>Poland  </li>
+                                <li>singapoor</li>
+                                <li>tourky</li>
+                                <li>spain</li>
+                                <li>United states</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+<!-- Bootstrap Js -->
+<script src="js/bootstrap.min.js"></script>
+<!-- owl carouel -->
+
+<script src="js/owlcarousel/owl.carousel.min.js"></script>
+
+<!-- custom Js file -->
+<script src="js/script.js"></script>
+<!-- owlCarousel -->
+<script src="jquery.min.js"></script>
+</body>
+</html>

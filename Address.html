@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazon Online shopping</title>
+    <!-- Favicon -->
+    <link rel="Shortcut icon" href="images/favicon.jpg">
+    <!-- JQuerry file -->
+    <script src="js/jquery-3.6.1.js"></script>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&family=Signika+Negative:wght@600&family=Signika:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Bootsrap files -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- font Awesome icons -->
+    <link rel="stylesheet" href="css/fontawesome/all.min.css">
+    <script src="js/fontawesome/all.min.js"></script>
+    <!-- Owlcarousel css -->
+    <link rel="stylesheet" href="css/Owlcarousel/owl.carousel.min.css">
+<link rel="stylesheet" href="css/Owlcarousel/owl.theme.default.min.css">
+    <!-- Costom css file -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation Bar start -->
+
+    <div class="container-flued">
+        <nav id="nav-top" class="navbar navbar-dark bg-dark top-nav">
+            <a class="navbar-brand" href=""><img src="images/amazon_logo.png"></a>
+
+            <li class="nav-item">
+                <div class=" nav-link">
+                    <div class="visitor"><span>Hello.</span></div>
+                </div>
+                <a class="nav-link" href="">
+                    <span>
+                        <i class="fa-solid fa-location-dot"></i>
+                    </span>
+                    Select your location</a>
+            </li>
+            <!-- Search Box -->
+                <form class="form-inline">
+                  <div class="input-group">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text Select-bt">All</span>
+                    </div>
+                    <input type="text" class="form-control search-box" placeholder="" aria-label="Username" aria-describedby="basic-addon1">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text search-btn"><i class="fa-solid fa-magnifying-glass-location"></i></span>
+                      </div>
+                  </div>
+                </form>
+
+                <li class="nav-item">
+                    <div class=" nav-link">
+                        <div class="visitor"><span>Hello. sign in</span></div>
+                    </div>
+                    <a class="nav-link" href="">
+                        
+                        Account & lists</a>
+                </li>
+                <li class="nav-item">
+                    <div class=" nav-link">
+                        <div class="visitor"><span>Returns</span></div>
+                    </div>
+                    <a class="nav-link" href="">
+                        
+                        & Orders</a>
+                </li>
+                <li class="nav-item cart-item">
+                    <div class=" nav-link">
+                    <i class="fa-solid fa-cart-shopping cart-icon"></i>
+                    </div>
+                    <a class="nav-link cart-title" href="">Cart</a>
+                </li>
+        </nav>
+    </div>
+    <!-- Top Navbar End -->
+    <div class="container-flued">
+        <nav class="navbar navbar-dark bottom-nav">
+            <li class="nav-item">
+                <div class="nav-link">
+                    <button id="side-menu" onclick="showSideMenu()">
+                    <i class="fa-solid fa-bars"></i>&nbsp; All</button>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="nav-link">
+                    <a href="">Sell</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="nav-link">
+                    <a href="">Best Seller</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="nav-link">
+                    <a href="">Todats Deal's</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="nav-link">
+                    <a href="">Mobiles</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="nav-link">
+                    <a href="">Customer Services</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="nav-link">
+                    <a href="">Books</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="nav-link">
+                    <a href="">Eloctronics</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="nav-link">
+                    <a href="">Fashion</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="nav-link">
+                    <a href="">Prime</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="nav-link">
+                    <a href="">Home & Kitchen</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <div class="nav-link">
+                    <img src="images/navbar-item-logo.jpg">
+                </div>
+            </li>
+            
+
+        </nav>
+    </div>
+    <!-- Side Navigation Bar -->
+    <div class="container-flued">
+        <div class="side-nav" id="Show-nav">
+            <div class="navbar navbar-dark side-top-nav">
+                <div class="top-tittle">
+                    <i class="fa-solid fa-user side-user-icon"></i>
+                    <h4 id="side-top">Hello, Sign in</h4>
+                </div>
+                
+            </div>
+            <div class="side-nav-menus">
+                <div id="tittle">
+                    <h5>Trending</h5>
+                </div>
+                <div class="nav-items">
+                    <div class="nav-link">Best Seller</div>
+                </div>
+                <div class="nav-items">
+                    <div class="nav-link">New Release</div>
+                </div>
+                <div class="nav-items">
+                    <div class="nav-link">Movers and Shakers</div>
+                </div>
+                <hr>
+
+                <div id="tittle">
+                    <h5>Digital Content And Devices</h5>
+                </div>
+                <div class="nav-items">
+                    <div class="nav-link">Echo & Alexa</div>
+                </div>
+                <div class="nav-items">
+                    <div class="nav-link">Kindle E-Readers And eBooks</div>
+                </div>
+                <div class="nav-items">
+                    <div class="nav-link">Audible Audiobooks</div>
+                </div>
+                <div class="nav-items">
+                    <div class="nav-link">Amazon Prime Video</div>
+                </div>
+                <div class="nav-items">
+                    <div class="nav-link">Amazon Prime Music</div>
+                </div>
+                <hr>
+                <div id="tittle">
+                    <h5>Shop By Category</h5>
+                </div>
+                <div class="nav-items">
+                    <div class="nav-link">Mobiles, Computers</div>
+                </div>
+                <div class="nav-items">
+                    <div class="nav-link">TV,Appliances, Electronics</div>
+                </div>
+                <div class="nav-items">
+                    <div class="nav-link">Men's Fashion</div>
+                </div>
+                <div class="nav-items">
+                    <div class="nav-link">Women's Fashion</div>
+                </div>
+                <div class="nav-items">
+                    <div class="nav-link">Amazon Prime Music</div>
+                </div> 
+                <hr>
+
+            </div>
+            <button id="hide-btn" onclick="hideSideNav()">X</button>
+        </div>
+    </div>
+    <!-- side navigation bar Ends -->
+
+    <!-- Address content Start hare -->
+    <div class="container-flued">
+        <div class="address-content">
+            <div class="page-bars">
+                <img src="images/Amazon_logo.svg.webp">
+            </div>
+            <div class="select-address">
+                <h2>Select a delivery address</h2>
+                <span class="tag-line">Is the address you'd like to use displayed below? If so,
+                     click the corresponding "Deliver to this address" button. Or you can <a href="">enter a new delivery address. </a>
+                </span>
+                <hr>
+            </div>
+            <div class="addresses">
+                <h5><b>Most recently used</b></h5>
+                <div class="address-list">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="address-box">
+                                <h6><b>Usam Vijay</b></h6>
+                                <p>Axis Bank Loan Center 3rd Floor</p>
+                                <p>Ayyappa Arcade</p>
+                                <p>Pochamma Maidan</p>
+                                <p>Warangal, TELANGANA 506002</p>
+                                <p>India</p>
+                                <a href="">Add delivery Instructions</a><br>
+                                <div class="this-address">
+                                    <button type="submit" class="btn btn-warning btn-sm ">Delivery to this Address</button><br>
+                                </div>
+                                <div class="action flex">
+                                    <a class="btn btn-info btn-sm action-bt" href="">Edit</a>
+                                    <a class="btn btn-info btn-sm action-bt" href="">Delete</a>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="address-box">
+                                <h6><b>Usam Vijay</b></h6>
+                                <p>Axis Bank Loan Center 3rd Floor</p>
+                                <p>Ayyappa Arcade</p>
+                                <p>Pochamma Maidan</p>
+                                <p>Warangal, TELANGANA 506002</p>
+                                <p>India</p>
+                                <a href="">Add delivery Instructions</a><br>
+                                <div class="this-address">
+                                    <button type="submit" class="btn btn-warning btn-sm ">Delivery to this Address</button><br>
+                                </div>
+                                <div class="action flex">
+                                    <a class="btn btn-info btn-sm action-bt" href="">Edit</a>
+                                    <a class="btn btn-info btn-sm action-bt" href="">Delete</a>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="address-box">
+                                <h6><b>Usam Vijay</b></h6>
+                                <p>Axis Bank Loan Center 3rd Floor</p>
+                                <p>Ayyappa Arcade</p>
+                                <p>Pochamma Maidan</p>
+                                <p>Warangal, TELANGANA 506002</p>
+                                <p>India</p>
+                                <a href="">Add delivery Instructions</a><br>
+                                <div class="this-address">
+                                    <button type="submit" class="btn btn-warning btn-sm ">Delivery to this Address</button><br>
+                                </div>
+                                <div class="action flex">
+                                    <a class="btn btn-info btn-sm action-bt" href="">Edit</a>
+                                    <a class="btn btn-info btn-sm action-bt" href="">Delete</a>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="address-box">
+                                <h6><b>Usam Vijay</b></h6>
+                                <p>Axis Bank Loan Center 3rd Floor</p>
+                                <p>Ayyappa Arcade</p>
+                                <p>Pochamma Maidan</p>
+                                <p>Warangal, TELANGANA 506002</p>
+                                <p>India</p>
+                                <a href="">Add delivery Instructions</a><br>
+                                <div class="this-address">
+                                    <button type="submit" class="btn btn-warning btn-sm ">Delivery to this Address</button><br>
+                                </div>
+                                <div class="action flex">
+                                    <a class="btn btn-info btn-sm action-bt" href="">Edit</a>
+                                    <a class="btn btn-info btn-sm action-bt" href="">Delete</a>
+
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="address-box">
+                                <h6><b>Usam Vijay</b></h6>
+                                <p>Axis Bank Loan Center 3rd Floor</p>
+                                <p>Ayyappa Arcade</p>
+                                <p>Pochamma Maidan</p>
+                                <p>Warangal, TELANGANA 506002</p>
+                                <p>India</p>
+                                <a href="">Add delivery Instructions</a><br>
+                                <div class="this-address">
+                                    <button type="submit" class="btn btn-warning btn-sm ">Delivery to this Address</button><br>
+                                </div>
+                                <div class="action flex">
+                                    <a class="btn btn-info btn-sm action-bt" href="">Edit</a>
+                                    <a class="btn btn-info btn-sm action-bt" href="">Delete</a>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr id="hr">
+            <!-- Add Address hare -->
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="add-address">
+                        <h5><b>Most recently used</b></h5>
+                        <div class="well">
+                            <div class="save-time flex">
+                                <p>Save time. Autofill your current location.</p>
+                                <a class="btn btn-secondary btn-sm" href="">Autofill</a>
+                            </div>
+                        </div>
+                            <div class="add-address-form">
+                                <form action="">
+                                    <div class="form-group">
+                                        <label>Country/Region</label>
+                                        <select class="form-control inp-size"> 
+                                            <option>India</option>
+                                            <option>America</option>
+                                            <option>South ofrica</option>
+                                            <option>chaina</option>
+                                            <option>Brezil</option>
+                                            <option>Indonasia</option>
+                                            <option>singapoor</option>
+                                        </select>
+                                    </div>
+                                    <div class="form-group form-single">
+                                        <label>Full name</label>
+                                        <input type="text" class="form-control inp-size" placeholder="">
+                                    </div>
+                                    <div class="form-group form-single">
+                                        <label>Mobile number</label>
+                                        <input type="text" class="form-control inp-size" placeholder="">
+                                    </div>
+                                    <div class="form-group form-single">
+                                        <label>Pincode</label>
+                                        <input type="text" class="form-control inp-size" placeholder="6 Digits[0-9] PIN code">
+                                    </div>
+                                    <div class="form-group form-single">
+                                        <label>Flat, House no., Building, Company, Apartmentn</label>
+                                        <input type="text" class="form-control inp-size" placeholder="">
+                                    </div>
+                                    <div class="form-group form-single">
+                                        <label>Area, Street, Sector, Village</label>
+                                        <input type="text" class="form-control inp-size" placeholder="">
+                                    </div>
+                                    <div class="form-group form-single">
+                                        <label>Landmark</label>
+                                        <input type="text" class="form-control inp-size" placeholder="E.g. Near Apollo Hospital">
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group form-single">
+                                                <label>Town/City</label>
+                                                <input type="text" class="form-control inp-size" placeholder="">
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group form-single">
+                                                <label>state</label>
+                                                <select class="form-control inp-size"> 
+                                                    <option>Telangana</option>
+                                                    <option>Andra Pradesh</option>
+                                                    <option>Bihar</option>
+                                                    <option>Maharastra</option>
+                                                    <option>Mumbai</option>
+                                                    <option>kerala</option>
+                                                    <option>chennai</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="mark-this flex">
+                                        <input type="checkbox">
+                                        <p>Make this my default address</p>
+                                    </div>
+                                        <h5>Add delivery instructions
+                                        </h5>
+                                        <p1 class="prefernces">Preferences are used to plan your delivery. However, shipments can sometimes arrive early or later than planned.</p1>
+                                        <select class="form-control inp-size"> 
+                                            <option>Select an Address type</option>
+                                            <option>Home (7 am - 9pm Delivery</option>
+                                            <option>Office/ commercial (10am - 6pm)</option>
+                                        </select>
+                                        <button type="submit" class="btn btn-warning btn-sm use-address">Use this Address</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr id="hr">
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Address content end hare -->
+
+   <!-- Bootstrap Js -->
+<script src="js/bootstrap.min.js"></script>
+<!-- owl carouel -->
+
+<script src="js/owlcarousel/owl.carousel.min.js"></script>
+
+<!-- custom Js file -->
+<script src="js/script.js"></script>
+<!-- owlCarousel -->
+<script src="jquery.min.js"></script>
+</body>
+</html>
